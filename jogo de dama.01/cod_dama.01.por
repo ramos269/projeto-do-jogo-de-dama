@@ -14,6 +14,7 @@ programa
 		 monta_janela()
 		 enquanto(verdadeiro){
 		 	imagen()
+		 	pedra()
 		 	g.renderizar()
 		 	}
 	}
@@ -25,6 +26,10 @@ programa
 	funcao imagen(){
 		g.desenhar_imagem(0, 0, dama)
 		}
+		funcao pedra(){
+		g.definir_cor(g.COR_PRETO)
+		g.desenhar_retangulo(87,86,35,35,falso,verdadeiro)
+		}
 }	
 
 
@@ -33,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 109; 
+ * @POSICAO-CURSOR = 257; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
